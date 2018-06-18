@@ -17,8 +17,7 @@ ROBOTSTXT_OBEY = False
 ITEM_PIPELINES = {
     'fashion_quotes_spider.custom_pipelines.cleanPipeline.CleanPipe': 100,
     'fashion_quotes_spider.custom_pipelines.defaultImage.DefaultImagePipe': 200,
-    'scrapy.pipelines.images.ImagesPipeline': 300,
-    'fashion_quotes_spider.custom_pipelines.renameImage.RenameImagePipe': 400
+    'scrapy.pipelines.images.ImagesPipeline': 300
 }
 
 IMAGES_STORE = '.\output'
