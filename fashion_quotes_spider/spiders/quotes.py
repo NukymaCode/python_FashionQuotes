@@ -31,10 +31,7 @@ class QuotesSpider(scrapy.Spider):
             yield quote_item
 
         # NEXT PAGE
-
-        '''
         next_page_url = response.xpath('//*[@class="next_page"]/@href').extract_first()
         if next_page_url:
             absolute_next_page_url = response.urljoin(next_page_url)
             yield scrapy.Request(absolute_next_page_url)
-        '''
